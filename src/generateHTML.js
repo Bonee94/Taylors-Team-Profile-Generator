@@ -8,6 +8,38 @@ function generateHTML(managerArray, engineerArray, internArray) {
 
     idCounter = engineerArray.length + 2
     internHTML = internToHTML(internArray, idCounter)
+    
+
+    let finalHTML = `<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style/style.css">
+        <script src="https://kit.fontawesome.com/6c0f2d0160.js" crossorigin="anonymous"></script>
+        <title>My Team</title>
+    </head>
+    
+    <body>
+        <header>
+            <h1>My Team</h1>
+        </header>
+        <main>
+        <section id="managers-box">${managerHTML}</section>
+        ${engineerHTML}
+        ${internHTML}
+        </main>
+    </body>
+    
+    </html>
+    `
+
+    fs.writeFileSync('./dist/index.html', finalHTML, function (err) {
+        if (err) throw err;
+        console.log('Saved!');
+    });
 
 }
 
