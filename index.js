@@ -95,18 +95,6 @@ const memberInfo = questions => {
 
             // If statements for saving and creating members information objects
             if (response.managerOfficeNumber || response.managerOfficeNumber == '') {
-                //Takes the entered names and uppercases the first letters.
-                const nameLower = response.memberName.toLowerCase();
-                const nameArray = nameLower.split(' ');
-                let correctName = '';
-                for (index = 0; index < nameArray.length; index++) {
-                    let properName = nameArray[index].charAt(0).toUpperCase() + nameArray[index].slice(1);
-                    correctName = correctName.concat(`${properName} `);
-                };
-
-                // Creates the manager object
-                const manager = new Manager(correctName, '1', response.memberEmail, response.managerOfficeNumber);
-
                 managerArray.push(response);
             } else if (response.memberGithubUsername || response.memberGithubUsername == '') {
                 engineerArray.push(response);
