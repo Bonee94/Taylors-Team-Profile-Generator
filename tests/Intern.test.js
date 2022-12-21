@@ -19,7 +19,7 @@ describe("Intern", () => {
         expect(typeof new Intern).toBe('object');
     });
 
-    it('Should return an object containing a passed in name, id, email and github username with a constant role of Intern when called with the new keyword', () => {
+    it('Should return an object containing a passed in name, id, email and school with a constant role of Intern when called with the new keyword', () => {
         const obj = new Intern(name, id, email, school);
 
         expect(obj).toMatchObject(checkObj);
