@@ -107,7 +107,6 @@ const memberInfo = questions => {
                 // Creates the manager object
                 const manager = new Manager(correctName, '1', response.memberEmail, response.managerOfficeNumber);
 
-                console.log(manager);
                 managerArray.push(response);
             } else if (response.memberGithubUsername || response.memberGithubUsername == '') {
                 engineerArray.push(response);
