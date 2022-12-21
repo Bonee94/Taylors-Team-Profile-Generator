@@ -86,3 +86,44 @@ function engineerToHTML(engineerArray, idCounter) {
 
     return '';
 }
+
+
+function internToHTML(internArray, idCounter) {
+    if (internArray.length > 0) {
+        let html = ''
+
+        for (let index = 0; index < internArray.length; index++) {
+
+            let name = internArray[index].memberName;
+            let role = 'Intern';
+            let email = internArray[index].memberEmail;
+            let school = internArray[index].memberSchool;
+
+            html += `
+                <div class="card">
+                <div class="card-header">
+                    <h2 id="intern-name">${name}</h2>
+                    <h3 id="intern-title"><i class="fa fa-user-graduate"></i>
+                     ${role}</h3>
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li id="intern-id">ID: ${idCounter}</li>
+                        <li id="intern-email">Email: 
+                        <a href="mailto:${email}">${email}</a>
+                        </li>
+                        <li id="intern-school">School: ${school}</li>
+                    </ul>
+                </div>
+            </div>
+    `
+            idCounter++
+        }
+
+        return html;
+    }
+
+    return '';
+}
+
+module.exports = generateHTML;
