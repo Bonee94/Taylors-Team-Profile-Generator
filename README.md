@@ -14,9 +14,9 @@
 - [Github](#github)
 
 ## Links
-    -
-    -
 
+- [Video Walkthrough](https://drive.google.com/file/d/1dbPC_5-bHAmqetcpImF-GwI2RIqI2Aup/view)
+- [Github Project Repo](https://github.com/Bonee94/Taylors-Team-Profile-Generator)
 
 ## User Story
 
@@ -58,21 +58,21 @@ To install the necessary dependencies, run the following command:
 
 - This application is to create a html document of a team.
 
-## Contributing 
+## Contributing
 
 - No contributions allowed.
 
 ## License
 
-  - This project is licensed under the MIT License.
-  - https://www.mit.edu/~amini/LICENSE.md
+- This project is licensed under the MIT License.
+- https://www.mit.edu/~amini/LICENSE.md
 
-  
 ## Tests
 
 To run tests, run the following command:
 
 - npm test
+
 ## Github
 
-  You can find more of my work at [bonee94](https://github.com/bonee94).
+You can find more of my work at [bonee94](https://github.com/bonee94).
